@@ -427,6 +427,7 @@ body {
   max-width: 20%;
   max-height: 20%;
   margin-right: 10px;
+  border-radius: 50%;
 }
 
 .secao9 {
@@ -516,8 +517,28 @@ body {
 }
 
 .secao10 .conteudo img {
-  width: 256px;
+  width: 278px;
   height: 256px;
+}
+
+.rodape {
+  background-color: var(--roxo1);
+  margin-top: 200px;
+}
+
+.rodape .copy {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #b55fc0;
+  padding: 10px 0;
+  line-height: 1.6;
+}
+
+.rodape .som, .rodape .som a{
+  font-size: 3px;
+  text-decoration: none;
+  color: var(--roxo1);
 }
 
   

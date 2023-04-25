@@ -1,20 +1,14 @@
-// selecione o botão de compra
-const botaoCompra = document.querySelector('.botao_compra');
+	function importHotmart(){ 
+ 		var imported = document.createElement('script'); 
+ 		imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+ 		document.head.appendChild(imported); 
+		var link = document.createElement('link'); 
+		link.rel = 'stylesheet'; 
+		link.type = 'text/css'; 
+		link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+		document.head.appendChild(link);	} 
+ 	importHotmart(); 
+ <a onclick="return false;" href="https://pay.hotmart.com/K81869953M?off=qsogbc9x&checkoutMode=10" class="hotmart-fb hotmart__button-checkout">ACCEDER AHORA</a> 
 
-// selecione o link externo
-const linkExterno = 'https://pay.hotmart.com/K81869953M?off=qsogbc9x&checkoutMode=10';
 
-// adicione um evento de carga à página
-window.addEventListener('load', () => {
-  // pré-carregue o link externo
-  const linkPreCarregado = document.createElement('link');
-  linkPreCarregado.rel = 'prefetch';
-  linkPreCarregado.href = linkExterno;
-  document.head.appendChild(linkPreCarregado);
-});
-
-// adicione um evento de clique ao botão de compra
-botaoCompra.addEventListener('click', () => {
-  // abra o link externo após o clique do usuário
-  window.open(linkExterno);
-});
+  
